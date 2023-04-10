@@ -10,22 +10,6 @@ export const baseURL = process.env.NEXT_PUBLIC_API_HOST as string
 
 export const host = process.env.NEXT_PUBLIC_HOST
 
-export const subscriptionsEndpoint = isProd ? `wss://${host}/graphql` : `ws://${host}/graphql`
-
-const githubClientId = process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID
-const googleClientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID
-
-export const HOST =
-  process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : 'https://www.ownchat.me'
-
-const githubRedirectUri = `${HOST}/api/auth/callback/github`
-const googleRedirectUri = `${HOST}/api/auth/callback/google`
-
-export const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${githubClientId}&redirect_uri=${githubRedirectUri}`
-export const googleAuthUrl =
-  `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=${googleRedirectUri}` +
-  `&scope=profile email&client_id=${googleClientId}`
-
 export const CHAT_URL = '/chat'
 
 export const LOGIN_SUCCESS_REDIRECT_URL = CHAT_URL
