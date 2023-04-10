@@ -4,10 +4,8 @@ import FomirCustom from './common/fields'
 import FomirBoneUI from './common/fomir-bone-ui'
 import { initFower } from './common/initFower'
 import { initI18n } from './common/initI18n'
-import { initStookGraphql } from '@common/initStookGraphql'
 
 export function init() {
-  initStookGraphql()
   initFower()
   initI18n()
 
