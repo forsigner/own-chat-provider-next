@@ -1,8 +1,23 @@
 import { Box } from '@fower/react'
+import { IconProps } from '@bone-ui/iconify'
 import { MoonOutline } from '@bone-ui/icons'
 import { Form, useForm } from 'fomir'
-import { Title } from './Title'
 import { useMode } from '../../hooks'
+import { FC } from 'react'
+
+type Props = {
+  icon?: FC<IconProps>
+  text: string
+}
+
+export const Title = ({ text, icon: Icon }: Props) => {
+  return (
+    <Box toCenterY gray400 mt8 mb3 spaceX2>
+      {Icon && <Icon square4 />}
+      <Box>{text}</Box>
+    </Box>
+  )
+}
 
 export const Theme = () => {
   const { mode, setMode } = useMode()

@@ -1,6 +1,6 @@
 import { request } from '@boter/request'
 import { useRouter } from 'next/router'
-import { mutateToken, mutateUser } from '../stores'
+import { mutateToken } from '../stores'
 
 export function useLogout() {
   const { push } = useRouter()
@@ -10,10 +10,8 @@ export function useLogout() {
       location.href = '/'
     }
 
-
     push('/')
 
-    mutateUser(null)
     mutateToken(null)
   }
 

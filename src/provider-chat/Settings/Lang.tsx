@@ -1,9 +1,24 @@
 import { Box } from '@fower/react'
 import { TranslateOutline } from '@bone-ui/icons'
 import { Form, useForm } from 'fomir'
-import { Title } from './Title'
 import { useLang } from '../../hooks/useLang'
 import { useTranslation } from 'react-i18next'
+import { FC } from 'react'
+import { IconProps } from '@bone-ui/iconify'
+
+type Props = {
+  icon?: FC<IconProps>
+  text: string
+}
+
+export const Title = ({ text, icon: Icon }: Props) => {
+  return (
+    <Box toCenterY gray400 mt8 mb3 spaceX2>
+      {Icon && <Icon square4 />}
+      <Box>{text}</Box>
+    </Box>
+  )
+}
 
 export const Lang = () => {
   const { lang, setLang } = useLang()
