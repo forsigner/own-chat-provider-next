@@ -1,3 +1,4 @@
+import '../styles/markdown.scss'
 import '../styles/globals.css'
 import { ToastContainer } from 'bone-ui'
 import type { AppProps } from 'next/app'
