@@ -4775,17 +4775,17 @@ stook-async-storage@^1.17.0:
   dependencies:
     stook "^1.17.0"
 
-stook-devtools@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/stook-devtools/-/stook-devtools-1.16.0.tgz#cd49bdf69d787eef0f6d889ac9001904a90efdd2"
-  integrity sha512-Pjcdf9BTdThVynUu6xr9kYZAVVDid8F40zBHtoZPlVdZ9/Q5JxQU9N31ZWUq2FG/e5PB9E+18+3mwHvaRwKFyQ==
+stook-devtools@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/stook-devtools/-/stook-devtools-1.17.0.tgz#fefc2d9f763bd8697eeb02a3ed08c8c6321699cd"
+  integrity sha512-Z8y5ynYTwEUA4LVszPoq/E/i7UkGBMFmHTvn/VXp+2wiqLLF4ISKrFwY3qSMEOp4Tt0p4nzq4AvFswZklYpmWQ==
   dependencies:
     redux "^4.1.2"
 
-stook-graphql@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/stook-graphql/-/stook-graphql-1.16.0.tgz#ddd30dacfeb8f31cbd53090791f3c295951a0a21"
-  integrity sha512-pA3PFNdcgME+pZvV2MCzZgNN9Cc8u6Pgl8ypZdSjAqn9WVsBfIfpU9MXNvTRkew6ceYGnrsc/gw6n0/X7JxDoQ==
+stook-graphql@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/stook-graphql/-/stook-graphql-1.17.0.tgz#72968c1561ea5769b0188b0501408924b4400398"
+  integrity sha512-1yrXGfyU6zD/lfZ144XSfGsuvL9rBJ5jE/+b4t8SszoFxCCB5HrQ+ODqm35so2qETIyqiUp1UJmek82Lq+kH4w==
   dependencies:
     "@boter/graphql-client" "^0.8.0"
     gql-tag "^1.0.1"
@@ -4793,30 +4793,22 @@ stook-graphql@^1.16.0:
     graphql-ws "^5.12.0"
     koa-compose "^4.1.0"
     react-fast-compare "^3.2.0"
-    stook "^1.16.0"
+    stook "^1.17.0"
 
-stook-localstorage@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/stook-localstorage/-/stook-localstorage-1.16.0.tgz#b1cc3b5541a532b39fcebe30d405b01b45d66a49"
-  integrity sha512-utkN1GfHtnVrMX2e7mwxi1uYtljsnkoeScD5F6CV0WtfMgzcNNmYPWF0KRYsEC5aEeLxAmul2gCqqV9WKEdbUg==
+stook-localstorage@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/stook-localstorage/-/stook-localstorage-1.17.0.tgz#9c99bc3b0bcaf0aa0e9698d1011aedd8cb010376"
+  integrity sha512-O++fPRS26hVzYPHhrBIl2IAPFDai87fi/Bs/2SIERAwCoe80rPMYkXZgKEqESEv96zhsOSLpcVDgKZu3L5UTfg==
 
-stook-rest@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/stook-rest/-/stook-rest-1.16.0.tgz#0b93db96aa81bed19c1dfd5a1c94105cd3f10c4c"
-  integrity sha512-KRpb7XO3YZ57CT/voh/39muzBdHCn/yBjT3leLhEYtu3fvhd9ifXQm67xsBU70h73tkzzdiaYP/cgxC12L/FRg==
+stook-rest@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/stook-rest/-/stook-rest-1.17.0.tgz#1c967816a250de288a437e65e47fda7ed53b3e1e"
+  integrity sha512-4/y1ZvTob9lmtkZiYviTUsqJd3l6frcSLZzv+0xpvd9NceMYztNkvSJKx0Q8aUlldVlR3VVGjQ7DRx0+QE7dDw==
   dependencies:
     "@boter/request" "^0.8.0"
     koa-compose "^4.1.0"
     react-fast-compare "^3.2.0"
-    stook "^1.16.0"
-
-stook@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/stook/-/stook-1.16.0.tgz#584c8809ec91b9337d2963539e0ecf42c0e5e260"
-  integrity sha512-5hV54ux/OxS3ceXY9r0mIT2syhhcye0kUN4aUoif73hHwR52qN4Z6U+vqyuYXAZ5wpSiGnATzoZdJ1LKqU0K9Q==
-  dependencies:
-    immer "^9.0.12"
-    mitt "^3.0.0"
+    stook "^1.17.0"
 
 stook@^1.17.0:
   version "1.17.0"
