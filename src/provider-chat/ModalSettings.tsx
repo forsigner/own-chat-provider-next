@@ -11,7 +11,10 @@ export const ModalSettings = () => {
 
   async function logout() {
     await request('/api/logout')
-    push('/login')
+
+    setTimeout(() => {
+      location.reload()
+    }, 50)
   }
 
   return (
