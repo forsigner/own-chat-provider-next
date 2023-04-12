@@ -1,6 +1,7 @@
 import { NextApiResponse } from 'next'
 import { NextRequest } from 'next/server'
 import { createParser, ParseEvent } from 'eventsource-parser'
+import cors from '@common/cors'
 
 class ChatGPTError extends Error {
   statusCode?: number
@@ -121,14 +122,16 @@ async function createStream(req: NextRequest) {
 const handler = async (req: NextRequest, _: NextApiResponse) => {
   try {
     const stream = await createStream(req)
-    return new Response(stream)
+    return cors(req, new Response(stream))
   } catch (error: any) {
-    const response = new Response(error, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-    return response
+    return cors(
+      req,
+      new Response(error, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }),
+    )
   }
 }
 
